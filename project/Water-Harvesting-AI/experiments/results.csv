@@ -1,0 +1,9 @@
+scenario,humidity,fog,energy,status,recommended,reason,warnings
+High Humidity With Fog,85,True,30,SUCCESS,Special Material,"Highest experimental score: 3.0. Estimated water: 4.0 L, Energy: 20.0 units.",
+Fog With Low Energy,40,True,10,SUCCESS,Fog Collector,"Highest experimental score: 1.85. Estimated water: 2.1 L, Energy: 5.0 units.",
+Humid Without Fog,75,False,40,SUCCESS,Special Material,"Highest experimental score: 2.529. Estimated water: 3.529 L, Energy: 20.0 units.",
+Dry Weather,30,False,10,NO_FEASIBLE_METHOD,,No feasible method or invalid sensor data.,
+No Energy Available,85,True,0,NO_FEASIBLE_METHOD,,No feasible method or invalid sensor data.,
+Invalid Humidity,120,True,30,SENSOR_WARNING,,Sensor data requires operator review.,Invalid humidity reading
+Missing Humidity,,True,30,SENSOR_WARNING,,Sensor data requires operator review.,Missing humidity reading
+Invalid Fog Reading,85,yes,30,SENSOR_WARNING,,Sensor data requires operator review.,Invalid fog sensor reading
