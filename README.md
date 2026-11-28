@@ -11,3 +11,12 @@ Organized coursework, practical AI exercises, portfolio and the AquaGent project
 
 ## AquaGent
 The project explores atmospheric water harvesting using rule-based decision logic and constraint satisfaction. See the [code documentation](CS3081/Project/AquaGent/Code/README.md) and [submission documentation](CS3081/Project/AquaGent/Submission/README.md) for details.
+
+## Repository overview
+
+Artificial intelligence coursework and AquaGent prototype.
+
+**Topics:** `python` · `artificial-intelligence` · `constraint-satisfaction` · `coursework`
+
+![AquaGent system flowchart](CS3081/Project/AquaGent/Reports/AquaGent%20System%20Flowchart.png)
+
