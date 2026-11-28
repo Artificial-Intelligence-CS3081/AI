@@ -1,0 +1,30 @@
+% ACL-like layout produced from ACL public style specifications for this PDF export.
+% This is not a vendored copy of the official acl.sty; for publisher submission
+% always rebuild in the official Overleaf ACL template.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{acl}[2026/11/27 ACL paper layout for AquaGent PDF]
+\DeclareOption{final}{}\DeclareOption{review}{}\DeclareOption{preprint}{}
+\ProcessOptions\relax
+\RequirePackage[a4paper,margin=2.5cm,heightrounded=true]{geometry}
+\RequirePackage{natbib}
+\RequirePackage{caption}
+\RequirePackage{hyperref}
+\setlength{\columnsep}{0.6cm}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\captionsetup{font=small}
+\hypersetup{colorlinks=true,citecolor=blue!45!black,linkcolor=blue!45!black,urlcolor=blue!45!black}
+\flushbottom\sloppy
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}{-2.0ex plus -.5ex minus -.2ex}{1.5ex plus .3ex minus .2ex}{\large\bfseries\raggedright}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}{-1.8ex plus -.5ex minus -.2ex}{.8ex plus .2ex}{\normalsize\bfseries\raggedright}}
+\makeatother
+\pagestyle{empty}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \twocolumn[{\centering\vspace*{0.4cm}\LARGE\bfseries\@title\par\vspace{0.4cm}%
+    \normalsize\@author\par\vspace{0.65cm}}]%
+}
+\makeatletter
+\renewenvironment{abstract}{\begin{center}\large\bfseries Abstract\end{center}\begingroup\normalsize\noindent}{\par\endgroup}
+\makeatother
