@@ -1,0 +1,11 @@
+scenario,status,p_fog,method,hours,water_demo_l,energy_demo_kwh,score_demo,warnings
+Fog detected,SUCCESS,0.8289,Fog Collector,4,2.865,0.4,2.545,
+Fog absent,SUCCESS,0.0565,MOF Collector,1,0.009,1.2,-0.951,
+Fog sensor missing,SUCCESS,0.35,MOF Collector,1,0.009,1.2,-0.951,Fog sensor missing: using prior probability; no false certainty assumed.
+Low humidity,NO_FEASIBLE_METHOD,0.0565,,,,,,
+No energy,NO_FEASIBLE_METHOD,0.8289,,,,,,
+Unsafe,NO_FEASIBLE_METHOD,0.8289,,,,,,
+Missing humidity,SENSOR_WARNING,,,,,,,Humidity must be between 0 and 100%.
+Invalid humidity,SENSOR_WARNING,,,,,,,Humidity must be between 0 and 100%.
+Low sensitivity,SUCCESS,0.7476,MOF Collector,1,0.009,1.2,-0.951,
+Tight energy,SUCCESS,0.8289,Fog Collector,2,1.432,0.2,1.272,

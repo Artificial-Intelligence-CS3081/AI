@@ -1,0 +1,1 @@
+"""AquaGent educational AI agent."""
